@@ -15,7 +15,6 @@ require.config({
 require(['module1', 'path/to/module2', 'jQuery'], function (module1ref, module2ref, $) {
     var module1 = new module1ref();
     var module2 = new module2ref();
-    console.log(module1.getEmail());
-    console.log(module1.getName() === module2.getModule1Name());
-    console.log('jQuery version:', $.fn.jquery);
+    console.log("nome: " + module1.getEmail());
+    console.log("e-mail: " + module1.getName());
 });
